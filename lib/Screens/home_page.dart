@@ -30,6 +30,7 @@ class _HomePageState extends State<HomePage> {
                   Expanded(child: ListView(
                     children: List.generate(5, (index){
                       return ListTile(
+                        contentPadding: EdgeInsets.all(0),
                         title: Text('Todo title'),
                         subtitle: Text('Todo time'),
                         leading: CircleAvatar(
